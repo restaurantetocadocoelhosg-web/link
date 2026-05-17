@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Toca do Coelho | Links</title>
+  <meta name="description" content="Peça no iFood, 99Food, conheça nossas marmitas fit, veja como chegar e avalie a Toca do Coelho no Google." />
+  <meta name="theme-color" content="#4b0f14" />
+
+  <meta property="og:title" content="Toca do Coelho | Links" />
+  <meta property="og:description" content="Pedidos, marmitas fit, localização e avaliações." />
+  <meta property="og:image" content="toca-do-coelho-link-bio.jpg" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --vinho: #4b0f14;
+      --dourado: #c9982f;
+      --creme: #fff5e8;
+      --whatsapp: #25d366;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top, rgba(201, 152, 47, 0.25), transparent 30%),
+        linear-gradient(180deg, #2d0b0d 0%, #5b1619 48%, #260708 100%);
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .page {
+      width: min(100%, 520px);
+      margin: 0 auto;
+      position: relative;
+      line-height: 0;
+    }
+
+    .mockup {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background: var(--creme);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+    }
+
+    .mockup img {
+      display: block;
+      width: 100%;
+      height: auto;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    .hotspot {
+      position: absolute;
+      display: block;
+      border-radius: 18px;
+      z-index: 2;
+      text-decoration: none;
+      cursor: pointer;
+      -webkit-tap-highlight-color: rgba(201, 152, 47, 0.28);
+    }
+
+    .hotspot:focus-visible {
+      outline: 3px solid var(--dourado);
+      outline-offset: 3px;
+      background: rgba(201, 152, 47, 0.16);
+    }
+
+    /*
+      Ative a visualização das áreas clicáveis abrindo:
+      index.html?debug=1
+    */
+    body.debug .hotspot {
+      background: rgba(37, 211, 102, 0.18);
+      border: 2px dashed rgba(37, 211, 102, 0.9);
+    }
+
+    body.debug .hotspot::after {
+      content: attr(aria-label);
+      position: absolute;
+      left: 8px;
+      top: 8px;
+      background: rgba(0,0,0,.72);
+      color: #fff;
+      font-size: 11px;
+      line-height: 1.2;
+      padding: 5px 7px;
+      border-radius: 8px;
+      max-width: 80%;
+    }
+
+    /* Áreas clicáveis proporcionais à imagem 864x1536 */
+    .link-ifood {
+      left: 3.4%;
+      top: 20.2%;
+      width: 93.0%;
+      height: 14.5%;
+    }
+
+    .link-99 {
+      left: 3.4%;
+      top: 35.7%;
+      width: 93.0%;
+      height: 13.9%;
+    }
+
+    .link-marmitas {
+      left: 3.4%;
+      top: 50.3%;
+      width: 93.0%;
+      height: 21.3%;
+    }
+
+    .link-maps {
+      left: 3.4%;
+      top: 72.8%;
+      width: 93.0%;
+      height: 8.1%;
+    }
+
+    .link-avaliacao {
+      left: 3.4%;
+      top: 81.6%;
+      width: 93.0%;
+      height: 10.2%;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: max(14px, calc((100vw - 520px) / 2 + 14px));
+      bottom: 18px;
+      z-index: 20;
+      width: 58px;
+      height: 58px;
+      border-radius: 999px;
+      background: var(--whatsapp);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 12px 28px rgba(0,0,0,.34);
+      text-decoration: none;
+      transition: transform .18s ease, box-shadow .18s ease;
+      line-height: 1;
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 15px 34px rgba(0,0,0,.42);
+    }
+
+    .whatsapp-float:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 4px;
+    }
+
+    .whatsapp-float svg {
+      width: 31px;
+      height: 31px;
+      display: block;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 430px) {
+      .whatsapp-float {
+        width: 54px;
+        height: 54px;
+        right: 12px;
+        bottom: 14px;
+      }
+      .whatsapp-float svg {
+        width: 29px;
+        height: 29px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page" aria-label="Links do Restaurante Toca do Coelho">
+    <section class="mockup">
+      <img src="toca-do-coelho-link-bio.jpg" alt="Página de links do Restaurante Toca do Coelho com cards para iFood, 99Food, Marmitas Fit, Google Maps e avaliações." />
+
+      <a class="hotspot link-ifood" href="https://www.ifood.com.br/delivery/sao-goncalo-rj/restaurante-toca-do-coelho-coelho/7eb56d39-81ed-4cf2-a819-f783c159f23a" target="_blank" rel="noopener noreferrer" aria-label="Abrir cardápio no iFood"></a>
+
+      <a class="hotspot link-99" href="https://oia.99app.com/dlp9/wkAlEX" target="_blank" rel="noopener noreferrer" aria-label="Abrir cardápio no 99Food"></a>
+
+      <a class="hotspot link-marmitas" href="https://restaurantetocadocoelhosg-web.github.io/marmitas/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer nossas Marmitas Fit"></a>
+
+      <a class="hotspot link-maps" href="https://www.google.com/maps/search/?api=1&query=Restaurante%20Toca%20do%20Coelho&query_place_id=ChIJy973t4uRmQARQXr3mZFOpjg" target="_blank" rel="noopener noreferrer" aria-label="Abrir endereço no Google Maps"></a>
+
+      <a class="hotspot link-avaliacao" href="https://search.google.com/local/writereview?placeid=ChIJy973t4uRmQARQXr3mZFOpjg" target="_blank" rel="noopener noreferrer" aria-label="Avaliar a Toca do Coelho no Google"></a>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/5521997912517?text=Ol%C3%A1!%20Vim%20pelo%20Instagram%20e%20quero%20fazer%20um%20pedido%20na%20Toca%20do%20Coelho." target="_blank" rel="noopener noreferrer" aria-label="Chamar a Toca do Coelho no WhatsApp">
+    <span class="sr-only">Chamar no WhatsApp</span>
+    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M16.04 3.2A12.76 12.76 0 0 0 5.1 22.5L3.6 28.8l6.44-1.5A12.74 12.74 0 1 0 16.04 3.2Zm0 23.13a10.5 10.5 0 0 1-5.36-1.47l-.38-.22-3.82.9.9-3.72-.25-.39a10.47 10.47 0 1 1 8.91 4.9Zm5.78-7.85c-.32-.16-1.88-.93-2.17-1.04-.29-.1-.5-.16-.7.16-.2.32-.8 1.04-.98 1.25-.18.22-.36.24-.68.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.58-1.88-1.76-2.2-.18-.32-.02-.49.14-.65.14-.14.32-.36.48-.54.16-.18.22-.32.32-.54.1-.22.05-.41-.03-.57-.08-.16-.7-1.7-.96-2.33-.25-.6-.5-.52-.7-.53h-.6c-.2 0-.54.08-.82.38-.28.3-1.08 1.05-1.08 2.56s1.1 2.97 1.25 3.18c.16.22 2.17 3.32 5.26 4.65.74.32 1.31.5 1.76.65.74.23 1.42.2 1.95.12.6-.09 1.88-.77 2.14-1.51.26-.74.26-1.38.18-1.51-.08-.14-.29-.22-.61-.38Z"/>
+    </svg>
+  </a>
+
+  <script>
+    if (new URLSearchParams(window.location.search).get("debug") === "1") {
+      document.body.classList.add("debug");
+    }
+  </script>
+</body>
+</html>
