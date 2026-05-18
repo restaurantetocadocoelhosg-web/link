@@ -79,10 +79,6 @@
       background: rgba(201, 152, 47, 0.16);
     }
 
-    /*
-      Ative a visualização das áreas clicáveis abrindo:
-      index.html?debug=1
-    */
     body.debug .hotspot {
       background: rgba(37, 211, 102, 0.18);
       border: 2px dashed rgba(37, 211, 102, 0.9);
@@ -102,7 +98,6 @@
       max-width: 80%;
     }
 
-    /* Áreas clicáveis proporcionais à imagem 864x1536 */
     .link-ifood {
       left: 3.4%;
       top: 20.2%;
@@ -138,6 +133,47 @@
       height: 10.2%;
     }
 
+    /* Botão Trabalhe Conosco */
+    .extra-links {
+      padding: 14px 16px 90px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      line-height: 1.4;
+    }
+
+    .btn-trabalhe {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: transparent;
+      border: 2px solid var(--dourado);
+      color: var(--dourado);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 17px 24px;
+      border-radius: 18px;
+      letter-spacing: 0.5px;
+      transition: background .18s, color .18s, transform .15s;
+    }
+
+    .btn-trabalhe:hover,
+    .btn-trabalhe:focus-visible {
+      background: var(--dourado);
+      color: #2d0b0d;
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .btn-trabalhe svg {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+
+    /* WhatsApp flutuante */
     .whatsapp-float {
       position: fixed;
       right: max(14px, calc((100vw - 520px) / 2 + 14px));
@@ -214,6 +250,22 @@
 
       <a class="hotspot link-avaliacao" href="https://search.google.com/local/writereview?placeid=ChIJy973t4uRmQARQXr3mZFOpjg" target="_blank" rel="noopener noreferrer" aria-label="Avaliar a Toca do Coelho no Google"></a>
     </section>
+
+    <div class="extra-links">
+      <a class="btn-trabalhe"
+         href="https://wa.me/5521997912517?text=CANDIDATO%3A+Ol%C3%A1%2C+vim+pelo+Instagram+e+tenho+interesse+em+trabalhar+na+Toca+do+Coelho.+Pode+me+informar+como+enviar+meu+curr%C3%ADculo%3F"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Trabalhe Conosco — enviar currículo via WhatsApp">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="7" width="20" height="14" rx="2"/>
+          <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+          <line x1="12" y1="12" x2="12" y2="16"/>
+          <line x1="10" y1="14" x2="14" y2="14"/>
+        </svg>
+        Trabalhe Conosco
+      </a>
+    </div>
   </main>
 
   <a class="whatsapp-float" href="https://wa.me/5521997912517?text=Ol%C3%A1!%20Vim%20pelo%20Instagram%20e%20quero%20fazer%20um%20pedido%20na%20Toca%20do%20Coelho." target="_blank" rel="noopener noreferrer" aria-label="Chamar a Toca do Coelho no WhatsApp">
