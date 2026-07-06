@@ -173,6 +173,37 @@
       flex-shrink: 0;
     }
 
+    /* Botão Site Oficial */
+    .btn-site {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--dourado);
+      border: 2px solid var(--dourado);
+      color: #2d0b0d;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 17px 24px;
+      border-radius: 18px;
+      letter-spacing: 0.5px;
+      transition: filter .18s, transform .15s;
+    }
+
+    .btn-site:hover,
+    .btn-site:focus-visible {
+      filter: brightness(1.1);
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .btn-site svg {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+
     /* WhatsApp flutuante */
     .whatsapp-float {
       position: fixed;
@@ -252,6 +283,18 @@
     </section>
 
     <div class="extra-links">
+      <a class="btn-site"
+         href="https://www.restaurantetocadocoelhosg.com.br"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Visitar o site oficial do Restaurante Toca do Coelho">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="2" y1="12" x2="22" y2="12"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+        Nosso Site Oficial
+      </a>
       <a class="btn-trabalhe"
          href="https://wa.me/5521997912517?text=CANDIDATO%3A+Ol%C3%A1%2C+vim+pelo+Instagram+e+tenho+interesse+em+trabalhar+na+Toca+do+Coelho.+Pode+me+informar+como+enviar+meu+curr%C3%ADculo%3F"
          target="_blank"
